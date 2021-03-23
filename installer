@@ -1,0 +1,11 @@
+#!/bin/bash
+clear;echo "##########################################"
+echo -e "   Auto installer Xderm Limitation Webui\n##########################################\n"
+echo "Installing, Tunggu.....";mkdir -p /www/xderm /www/xderm/limitdir
+url="https://raw.githubusercontent.com/ryanfauzi1/webui-limitation/main"
+wget -O /www/xderm/limit.php $url/limit.php -q
+wget -O /www/xderm/limit $url/limit -q
+echo Start > /www/xderm/limitdir/st;echo 3 > /www/xderm/limitdir/sz
+echo " -Ready to use" > /www/xderm/limitdir/log.txt
+echo -e "Terinstall.\n\nSilahkan Akses 'http://ip/xderm/limit.php'"
+echo "Terima kasih -salam ryan fauzi."
