@@ -1,5 +1,5 @@
 #!/bin/bash
-iface=eth5;n=1;mkdir -p limitdir;rm -rf limitdir/log.txt
+iface=eth0;n=1;mkdir -p limitdir;rm -rf limitdir/log.txt
 size=$(cat limitdir/sz|sed 's/ //g')
  if [ -f $size ]; then
 echo "{$(date +%M:%S)} Speed Limit Value belom ditentukan!" > limitdir/log.txt;exit
